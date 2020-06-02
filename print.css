@@ -1,0 +1,28 @@
+
+
+/* print.css */
+
+
+header, footer, .topnav, nav, form, iframe {
+  display: none !important;
+}
+
+
+@media print {
+  #printbutton, #footer, #returntohome{
+    display: none;
+  }
+}
+
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
