@@ -3,15 +3,20 @@
 <html>
 
 <head>
-  <title>CONTACT US SNHU-A-Palooza: Darren Robinson</title>
+  <title>SNHU-A-Palooza: Darren Robinson</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
 
- <link rel="stylesheet" href="assets/css/main.css" />
+
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" media="print" href="assets/css/print.css" />
 
  
+
+
   <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 
@@ -41,7 +46,7 @@
     <a href="./login.html">Login</a>
     <a href="./map.html">Map</a>
     <a href="./sponsors.html">Sponsors</a>
-    <a href="./contact.html" class="active">Contact Us</a>
+    <a href="./contact.html">Contact Us</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -68,46 +73,55 @@
 
       </section>
 
+    <div class="darkbox2">
 
 
-      <!-- Main Text -->
-      <article class="post">
-        <header>
-
-          <p id="location">When: Starting June 12, 2020
-            <br>Where: Woodstock, NY</p>
-
-        </header>
+          <header>
 
 
-        <header>
-          <div class="title">
-            <h2 class="h2center" id="h2boxed">This Will Be the Contact Page</h2>
+            <div class="title">
+              <h2 class="h2center" id="orangeboxroundtop">Registration Information</h2>
 
-          </div>
-
-        </header>
-
-        <p>
-          <!--Content will go here -->
-        </p>
-        <p>Future contact form will go here!</p>
+            </div>
 
 
+          </header>
+
+
+
+         <article class="bluebox">
+                  <div class="darkbox2">
+                    <center>
+                    
+                    
+                   
+           
+
+          <!-- START REGISTRATION INFORMATION FROM PHP SCRIPT -->
+         <?php include 'regForm.php';?>
+                      
+                      
+                       <br>
+    <input type="button"
+           id="printbutton"
+           onClick="window.print()"
+           value="Print This Page"/>
+    <br><br> <a href="./index.html" id="returntohome">Return to the homepage</a>
+
+
+           </center>
+                      
+                      
+                 
+           </div>
       </article>
 
-    </div>
+        </div>
     <!-- End of Main div -->
 
+    </div>
 
-
-  
-
-
-  </div>
-  <!-- End of Wrapper div -->
-
-  <!-- Footer -->
+    <!-- Footer -->
     <section id="footer">
       <ul class="icons">
         <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a>
@@ -124,6 +138,14 @@
 
       <p class="copyright">&copy; Untitled. Design: Darren "Jesse" Robinson SNHU ID: 1094327. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
     </section>
+
+
+
+
+
+  </div>
+  <!-- End of Wrapper div -->
+
 
 
 

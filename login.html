@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>REGISTER SNHU-A-Palooza: Darren Robinson</title>
+  <title>LOGIN SNHU-A-Palooza: Darren Robinson</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -32,27 +32,13 @@
     <!--
      // Form validation code will come here.
 
-    function validate() {
-      if(document.regForm.FirstName.value == "") {
-        alert("Please provide your first name!");
-        document.regForm.FirstName.focus();
-        return false;
-      }
-      if(document.regForm.LastName.value == "") {
-        alert("Please provide your last name!");
-        document.regForm.LastName.focus();
-        return false;
-      }
+ 
       if(document.regForm.Email.value == "") {
         alert("Please provide your Email!");
         document.regForm.Email.focus();
         return false;
       }
-      if(document.regForm.PhoneNum.value == "") {
-        alert("Please provide your phone number!");
-        document.regForm.PhoneNum.focus();
-        return false;
-      }
+
       // EMAIL expression to check for valid email format
       var echeck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       // PHONE validation fails if the input doesn't match XXX-XXX-XXXX
@@ -61,15 +47,7 @@
         regForm.Email.focus();
         return false;
       }
-      // PHONE expression to match format of XXX-XXX-XXXX
-      var ph2 = /^[2-9]\d{2}-\d{3}-\d{4}$/;
-      // PHONE validation fails if the input doesn't match XXX-XXX-XXXX
-      if(!ph2.test(regForm.PhoneNum.value)) {
-        alert("Error: Phone number must be in the format of XXX-XXX-XXXX");
-        regForm.PhoneNum.focus();
-        return false;
-      }
-      return(true);
+ 
     }
      //-->
   </script>
@@ -87,8 +65,8 @@
   <div class="topnav" id="myTopnav">
     <a href="./index.html">Home</a>
     <a href="./details.html">Details</a>
-    <a href="./register.html" class="active">Register</a>
-    <a href="./login.html">Login</a>
+    <a href="./register.html">Register</a>
+    <a href="./login.html" class="active">Login</a>
     <a href="./map.html">Map</a>
     <a href="./sponsors.html">Sponsors</a>
     <a href="./contact.html">Contact Us</a>
@@ -140,19 +118,13 @@
           <hr class="orangesolid1px">
 
           <div class="title">
-            <h2 class="h2center" id="h2boxed">Register to Sign Up</h2>
+            <h2 class="h2center" id="h2boxed">Retrieve Your Ticket Info</h2>
 
           </div>
 
           <hr class="orangesolid1px">
 
-          <header>
-            <div class="title">
-              <h2 class="h2center" id="orangeboxroundbottom">Register Now for an Amazing Concert Event!</h2>
-
-            </div>
-
-          </header>
+        
 
         </div>
 
@@ -177,31 +149,19 @@
 
           <img src="./images/concert/concert9.jpg" class="imgresponsiveleft">
 
-          <!-- START REGISTRATION FORM -->
-          <form method="post" action="./success.html" name="regForm" onsubmit="return(validate());">
-            <p>Once you submit your information, a confirmation number will be given.
-              <br>Please make sure you write this number down.</p>
+          <!-- START LOGIN FORM -->
+          <form method="post" action="./login_success.html" name="regForm" onsubmit="return(validate());">
+            <p>Once you submit your information, your ticket information will be shown.
+              </p>
 
 
-            <label for="FirstName">First name:</label>
-            <br>
-            <input type="text" id="FirstName" name="FirstName">
-            <br>
-            <label for="LastName">Last name:</label>
-            <br>
-            <input type="text" id="LastName" name="LastName">
-            <br>
+         
             <label for="Email">Email:</label>
             <br>
             <input type="text" id="Email" name="Email">
          
 
-              <br>
-              <label for="PhoneNum">Phone (XXX-XXX-XXXX):</label>
-              <br>
-              <input type="text" id="PhoneNum" name="PhoneNum">
-              <br>
-              <br>
+              <br> <br> 
               <input type="submit" value="Submit">
 
           </form>
