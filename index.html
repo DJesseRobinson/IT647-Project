@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    <title>SNHU-A-Palooza: Darren Robinson</title>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    
+    
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 12, 2020 16:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("countdown").innerHTML = "Countdown to First Concert:" + " " + days + "d " + hours + "h "
+  + minutes + "m ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+   
+    
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+    
+        
+        
+				<!-- Header -->
+					<header id="header">
+           
+						<nav class="links">
+							<ul>
+                <li><a href="./index.html">Home</a></li>
+								<li><a href="./details.html">Details</a></li>
+								<li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Account Login</a></li>
+                 <li><a href="./calendar.html">Event Calendar</a></li>
+								<li><a href="./map.html">Map</a></li>
+				        <li><a href="./sponsors.html">Sponsors</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                            
+							</ul>
+						</nav>
+         
+					
+					</header>
+			
+			
+				<!-- Main -->
+					<div id="main">
+            
+            <p class="countdownstyle" id="countdown"></p>
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2 class="h2center" id="h2boxed"><a href="#">Register Now for an Amazing Concert Event!</a></h2>
+									
+									</div>
+									
+								</header>
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<p>The city of Woodstock, NY invites you to a FREE open concert series, SNHU-a-palooza. The concerts will run on the first Friday of
+                  every month in Robinson Farms fied. </p>
+                <p>Registration is required and Admission is free. But attendnce is limited to 50,000 people.</p>
+                
+         
+                
+                
+							</article>
+					</div>
+        
+        
+ 
+        
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<img src="images/logo1.png" alt="SNHU-a-Palooza" class="logo imgcenter" />
+								<header>
+							
+                  <p id="location">When: Starting June 12, 2020<br>
+									Where: Woodstock, NY</p>
+                  
+								</header>
+							</section>
+
+						<!-- Mini Posts -->
+							<section>
+								<div class="mini-posts">
+                  <h2 class="h2center" id="pink">Mark Your Calendar</h2>
+                  
+                      <!-- Google Calendar Embed -->
+  <div class="responsiveCal">
+                    
+ 
+                     <iframe src="https://calendar.google.com/calendar/embed?src=cema3frfbtepognvngn548ms6o%40group.calendar.google.com&ctz=America%2FPanama" style="border: 0"  frameborder="0" scrolling="no"></iframe>
+                      </div>
+									<!-- Calendar -->
+														
+
+								</div>
+							</section>
+
+						<!-- About -->
+							<section class="blurb">
+								<h2 id="pink">About</h2>
+								<p id="smallbox">Enjoy the summer outdoors with a concert series from SNHU and local sponsors.</p>
+								<ul class="actions">
+									<li><a href="./details.html" class="button2">Learn More</a></li>
+								</ul>
+							</section>
+
+			<!-- Footer -->
+							<section id="footer">
+								<ul class="icons">
+									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+									<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+                
+                <p class="copyright">&copy; Untitled. Design: Darren "Jesse" Robinson SNHU ID: 1094327. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+								</section>
+							
+					</section>
+
+			</div>
+			
+
+
+    
+    
+    
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
